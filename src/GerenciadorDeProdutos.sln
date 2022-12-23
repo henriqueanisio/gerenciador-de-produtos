@@ -7,8 +7,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GerenciadorDeProdutos.Domai
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GerenciadorDeProdutos.Infra.Data", "GerenciadorDeProdutos.Infra.Data\GerenciadorDeProdutos.Infra.Data.csproj", "{71BB73BE-B119-48B0-955C-4628CCECA60B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GerenciadorDeProdutos.Web", "GerenciadorDeProdutos.Web\GerenciadorDeProdutos.Web.csproj", "{8A1EE66D-2A1D-42D4-B13A-E28AE8EC77E1}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GerenciadorDeProdutos.CrossCutting", "GerenciadorDeProdutos.CrossCutting\GerenciadorDeProdutos.CrossCutting.csproj", "{06B07FE0-1E1E-4B58-8CD7-012E060206E6}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GerenciadorDeProdutos.Service", "GerenciadorDeProdutos.Service\GerenciadorDeProdutos.Service.csproj", "{584DC1C9-A865-4F47-969C-044B2B7941BF}"
@@ -29,10 +27,6 @@ Global
 		{71BB73BE-B119-48B0-955C-4628CCECA60B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{71BB73BE-B119-48B0-955C-4628CCECA60B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{71BB73BE-B119-48B0-955C-4628CCECA60B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{8A1EE66D-2A1D-42D4-B13A-E28AE8EC77E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8A1EE66D-2A1D-42D4-B13A-E28AE8EC77E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8A1EE66D-2A1D-42D4-B13A-E28AE8EC77E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8A1EE66D-2A1D-42D4-B13A-E28AE8EC77E1}.Release|Any CPU.Build.0 = Release|Any CPU
 		{06B07FE0-1E1E-4B58-8CD7-012E060206E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{06B07FE0-1E1E-4B58-8CD7-012E060206E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{06B07FE0-1E1E-4B58-8CD7-012E060206E6}.Release|Any CPU.ActiveCfg = Release|Any CPU

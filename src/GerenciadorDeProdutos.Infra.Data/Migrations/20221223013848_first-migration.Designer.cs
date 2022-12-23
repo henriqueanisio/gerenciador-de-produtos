@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace GerenciadorDeProdutos.Infra.Data.Migrations
 {
     [DbContext(typeof(MyContext))]
-    [Migration("20221221220140_First")]
-    partial class First
+    [Migration("20221223013848_first-migration")]
+    partial class firstmigration
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -79,13 +79,13 @@ namespace GerenciadorDeProdutos.Infra.Data.Migrations
 
                     b.HasIndex("CategoryId");
 
-                    b.ToTable("ProductCategory");
+                    b.ToTable("ProductsCategories");
                 });
 
             modelBuilder.Entity("GerenciadorDeProdutos.Domain.Models.ProductCategory", b =>
                 {
                     b.HasOne("GerenciadorDeProdutos.Domain.Models.Category", "Category")
-                        .WithMany("ProductsCategories")
+                        .WithMany("ProductCategories")
                         .HasForeignKey("CategoryId")
                         .IsRequired();
 
@@ -101,7 +101,7 @@ namespace GerenciadorDeProdutos.Infra.Data.Migrations
 
             modelBuilder.Entity("GerenciadorDeProdutos.Domain.Models.Category", b =>
                 {
-                    b.Navigation("ProductsCategories");
+                    b.Navigation("ProductCategories");
                 });
 
             modelBuilder.Entity("GerenciadorDeProdutos.Domain.Models.Product", b =>

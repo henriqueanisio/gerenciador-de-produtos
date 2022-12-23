@@ -10,6 +10,8 @@ namespace GerenciadorDeProdutos.Domain.Interfaces
         Task Update(Product product);
         Task DeleteById(Guid id);
         Task<IEnumerable<Product>> GetProductsAsync(string searchDescription, List<Guid> idsCategories, bool situation = true);
-        Task<Product> CreateProductAsync(Product product);
+        Task<Product> CreateProductAsync(Product product, List<Guid> idsCategories);
+
+        Task<Product> UpdateProductAsync(Product product, List<Guid> idsCategories);
     }
 }

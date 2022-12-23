@@ -26,16 +26,20 @@ namespace GerenciadorDeProdutos.Infra.Data.Repository
             return await DbSet.ToListAsync();
         }
 
-        public virtual async Task Create(TEntity entity)
+        public virtual async Task<TEntity> Create(TEntity entity)
         {
             DbSet.Add(entity);
             await SaveChanges();
+
+            return entity;
         }
 
-        public virtual async Task Update(TEntity entity)
+        public virtual async Task<TEntity> Update(TEntity entity)
         {
             DbSet.Update(entity);
             await SaveChanges();
+
+            return entity;
         }
 
         public virtual async Task DeleteById(Guid id)

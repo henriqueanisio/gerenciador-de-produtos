@@ -46,9 +46,40 @@ namespace GerenciadorDeProdutos.Service.Services
             return await _productRepository.GetProductsAsync(searchDescription, idsCategories, situation);
         }
 
-        public async Task<Product> CreateProductAsync(Product product)
+        public async Task<Product> CreateProductAsync(Product product, List<Guid> idsCategories)
         {
+            var categoriesModel = new List<Category>();
+
+            foreach (var id in idsCategories)
+            {
+                var categoryModel = new Category();
+                categoryModel.Id = id;
+
+                categoriesModel.Add(categoryModel);
+
+            }
+
+            product.Categories = categoriesModel;
+
             return await _productRepository.CreateProductAsync(product);
+        }
+
+        public async Task<Product> UpdateProductAsync(Product product, List<Guid> idsCategories)
+        {
+            var categoriesModel = new List<Category>();
+
+            foreach (var id in idsCategories)
+            {
+                var categoryModel = new Category();
+                categoryModel.Id = id;
+
+                categoriesModel.Add(categoryModel);
+
+            }
+
+            product.Categories = categoriesModel; 
+
+            return await _productRepository.UpdateProductAsync(product);
         }
 
     }

@@ -13,14 +13,14 @@ namespace GerenciadorDeProdutos.Service.Services
         }
 
 
-        public async Task Create(Category category)
+        public async Task<Category> Create(Category category)
         {
-            await _categoryRepository.Create(category);
+           return await _categoryRepository.Create(category);
         }
 
-        public async Task Update(Category category)
+        public async Task<Category> Update(Category category)
         {
-            await _categoryRepository.Update(category);
+           return await _categoryRepository.Update(category);
         }
 
         public async Task DeleteById(Guid categoryId)

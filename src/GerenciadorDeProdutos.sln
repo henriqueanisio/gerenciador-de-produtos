@@ -3,15 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GerenciadorDeProdutos.Domain", "GerenciadorDeProdutos.Domain\GerenciadorDeProdutos.Domain.csproj", "{8A72F045-F7C2-47BA-B00D-18DDE2A70C4A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GerenciadorDeProdutos.Domain", "GerenciadorDeProdutos.Domain\GerenciadorDeProdutos.Domain.csproj", "{8A72F045-F7C2-47BA-B00D-18DDE2A70C4A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GerenciadorDeProdutos.Infra.Data", "GerenciadorDeProdutos.Infra.Data\GerenciadorDeProdutos.Infra.Data.csproj", "{71BB73BE-B119-48B0-955C-4628CCECA60B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GerenciadorDeProdutos.Infra.Data", "GerenciadorDeProdutos.Infra.Data\GerenciadorDeProdutos.Infra.Data.csproj", "{71BB73BE-B119-48B0-955C-4628CCECA60B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GerenciadorDeProdutos.Web", "GerenciadorDeProdutos.Web\GerenciadorDeProdutos.Web.csproj", "{8A1EE66D-2A1D-42D4-B13A-E28AE8EC77E1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GerenciadorDeProdutos.Web", "GerenciadorDeProdutos.Web\GerenciadorDeProdutos.Web.csproj", "{8A1EE66D-2A1D-42D4-B13A-E28AE8EC77E1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GerenciadorDeProdutos.CrossCutting", "GerenciadorDeProdutos.CrossCutting\GerenciadorDeProdutos.CrossCutting.csproj", "{06B07FE0-1E1E-4B58-8CD7-012E060206E6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GerenciadorDeProdutos.CrossCutting", "GerenciadorDeProdutos.CrossCutting\GerenciadorDeProdutos.CrossCutting.csproj", "{06B07FE0-1E1E-4B58-8CD7-012E060206E6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GerenciadorDeProdutos.Service", "GerenciadorDeProdutos.Service\GerenciadorDeProdutos.Service.csproj", "{584DC1C9-A865-4F47-969C-044B2B7941BF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GerenciadorDeProdutos.Service", "GerenciadorDeProdutos.Service\GerenciadorDeProdutos.Service.csproj", "{584DC1C9-A865-4F47-969C-044B2B7941BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GerenciadorDeProdutos.API", "GerenciadorDeProdutos.API\GerenciadorDeProdutos.API.csproj", "{CA43E371-7684-4AAE-9C2A-EA1FF0E18B98}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{584DC1C9-A865-4F47-969C-044B2B7941BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{584DC1C9-A865-4F47-969C-044B2B7941BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{584DC1C9-A865-4F47-969C-044B2B7941BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA43E371-7684-4AAE-9C2A-EA1FF0E18B98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA43E371-7684-4AAE-9C2A-EA1FF0E18B98}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA43E371-7684-4AAE-9C2A-EA1FF0E18B98}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA43E371-7684-4AAE-9C2A-EA1FF0E18B98}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 
-namespace GerenciadorDeProdutos.Web.ViewModels
+namespace GerenciadorDeProdutos.API.ViewModels
 {
     public class FilterViewModel 
     {

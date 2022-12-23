@@ -7,28 +7,33 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="ViewModels\CategoryViewModel.cs~RF81003b.TMP" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.0" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.1">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="6.4.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Newtonsoft" Version="6.4.0" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\GerenciadorDeProdutos.CrossCutting\GerenciadorDeProdutos.CrossCutting.csproj" />
+    <ProjectReference Include="..\GerenciadorDeProdutos.Domain\GerenciadorDeProdutos.Domain.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <Content Update="Views\Categories\Create.cshtml">
+    <Content Update="appsettings.Development.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>
-    <Content Update="Views\Categories\Index.cshtml">
-      <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-    </Content>
-    <Content Update="Views\Categories\_ListCategories.cshtml">
+    <Content Update="appsettings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <ExcludeFromSingleFile>true</ExcludeFromSingleFile>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
     </Content>

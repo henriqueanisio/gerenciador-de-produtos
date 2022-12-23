@@ -24,7 +24,7 @@ namespace GerenciadorDeProdutos.Infra.Data.Repository
                 .Include(p => p.ProductsCategories)
                 .OrderBy(p => p.Name).ToListAsync();
 
-            if (idsCategories != null)
+            if (idsCategories != null && idsCategories.Any())
             {
                 products = (from product in products
                             from productCategory in product.ProductsCategories
@@ -64,6 +64,42 @@ namespace GerenciadorDeProdutos.Infra.Data.Repository
             }
 
             return product;
+        }
+
+        public async Task<Product> UpdateProductAsync(Product product)
+        {
+            try
+            {
+                var productConsult = await Db.Products
+                                    .Include(p => p.ProductsCategories)
+                                    .SingleOrDefaultAsync(p => p.Id == product.Id);
+
+                if (productConsult == null)
+                {
+                    return null;
+                }
+
+                Db.Entry(productConsult).CurrentValues.SetValues(product);
+                await UpdateProductsCategories(product, productConsult);
+                await Db.SaveChangesAsync();
+                return productConsult;
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+
+        }
+
+        private async Task UpdateProductsCategories(Product product, Product productConsult)
+        {
+            productConsult.ProductsCategories.Clear();
+            foreach (var productCategory in productConsult.ProductsCategories)
+            {
+                var productCategoryConsult = await Db.ProductsCategories.FindAsync(productCategory.CategoryId);
+                productConsult.ProductsCategories.Add(productCategoryConsult);
+            }
         }
 
         private async Task CreateProductCategory(Product product)

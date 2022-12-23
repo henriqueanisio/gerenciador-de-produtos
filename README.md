@@ -4,7 +4,7 @@ Este aplicativo foi desenvolvido como teste de uma entrevista, utilizando .NET C
 
 ## Tecnologias
 
-Here are the technologies used in this project.
+Tecnologias utilizadas nesse projeto.
 
 * .NET Core 6
 * Entity Framework Core 7.0.1
